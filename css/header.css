@@ -1,0 +1,22 @@
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+  mix-blend-mode: screen;
+}
