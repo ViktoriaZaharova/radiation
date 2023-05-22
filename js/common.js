@@ -1,2 +1,13 @@
-$('[name="phone"]').mask('+7 (999) 999-99-99');
+$('.js-simple-slider').slick({
+	lazyLoad: 'ondemand',
+	infinite: false,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: true,
+	dots: true,
+	adaptiveHeight: true
+});
 
+Fancybox.bind('[data-fancybox="gallery"]', {
+	//
+});    

@@ -75,7 +75,7 @@
 	margin: 0 0 90px
 	.box-text
 		text-align: center
-		margin: 0 auto 
+		margin: 0 auto
 		max-width: 1090px
 		width: 100%
 		font-weight: 300
@@ -123,7 +123,7 @@
 		margin: 0 0 64px
 		font-size: 88px
 
-.list-decor		
+.list-decor
 	li
 		position: relative
 		padding: 0 0 0 64px
@@ -134,7 +134,7 @@
 			content: ''
 			position: absolute
 			left: -50px
-			top: -40px
+			top: -45px
 			width: 128px
 			height: 127px
 			background: url('../img/decor1.png') no-repeat center
@@ -151,7 +151,7 @@
 		@include d-flex
 		height: 203px
 		margin: 0 auto 50px
-				
+
 // practices
 .practices
 	margin: 55px 0 100px
@@ -186,4 +186,195 @@
 		height: 200px
 
 	&:last-child
-		margin: 0 0 50px		
+		margin: 0 0 50px
+
+// prices
+.prices
+	margin: 53px 0 0
+	background: url('../img/bg3.png') no-repeat center
+	background-size: 100%
+	mix-blend-mode: lighten
+
+.prices-card
+	width: 100%
+	margin: 0 0 120px
+	position: relative
+	border-radius: 52px
+	border-top: 3px solid rgba(#7c7ca0, .3)
+	padding: 70px 85px 100px
+	background: rgba(#dce8ff, .15)
+	h3
+		text-align: center
+		text-transform: uppercase
+		position: relative
+		z-index: 1
+		font-size: 100px
+		font-family: $title-font
+		&::before
+			content: ''
+			position: absolute
+			z-index: -1
+			width: 654px
+			height: 341px
+			background: url('../img/decor-title1.png') no-repeat center
+			background-size: 100%
+			bottom: -45px
+			left: 50%
+			transform: translate(-50%,0)
+	&:last-child
+		margin: 0
+	&__head
+		width: 100%
+	&__body
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+		margin: 40px 0 0
+	&__text
+		width: calc(100% - 280px)
+		padding: 0 67px 0 0
+		font-weight: 300
+		line-height: 1.2
+		letter-spacing: -0.3px
+		.list-decor li
+			margin: 0 0 30px
+	&__image
+		position: absolute
+		z-index: 1
+		right: -70px
+		bottom: -15px
+	&:last-child
+		.prices-card__image
+			right: -90px
+			bottom: 0
+		.bonus-box
+			&::before
+				background: url('../img/border-gradient.png') no-repeat center
+				background-size: cover
+
+.bonus-box
+	width: 280px
+	padding: 70px 40px 96px
+	font-size: 24px
+	font-weight: 300
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		background: url('../img/border-gradient-1.png') no-repeat center
+		background-size: cover
+		width: 342px
+		height: 593px
+
+	h4
+		letter-spacing: -0.48px
+		font-size: 48px
+		font-weight: normal
+		font-family: $title-font
+		text-transform: uppercase
+		margin: 0 0 10px
+	.subtitle
+		letter-spacing: -0.3px
+		font-weight: bold
+		margin: 0 0 10px
+		text-transform: uppercase
+
+.price
+	text-align: center
+	width: 100%
+	text-transform: uppercase
+	font-size: 36px
+	font-weight: bold
+
+// location
+.location
+	margin: 115px 0 0
+
+.address
+	text-transform: uppercase
+	margin: 0 auto
+	font-weight: bold
+	max-width: 630px
+	text-align: center
+
+.location-image
+	margin: 0 auto 84px
+	@include d-flex
+	max-width: 990px
+	width: 100%
+
+.gallery-wrapper
+	display: flex
+	align-items: start
+	flex-wrap: wrap
+	justify-content: space-between
+	width: 100%
+
+.gallery-box
+	@include d-flex
+	width: 413px
+	height: 277px
+	margin: 0 0 40px
+
+// reviews
+.reviews__heading
+	color: #fff
+	text-shadow: none
+	margin: 0 auto 50px
+
+.reviews__list-item-inner
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	padding: 20px 80px
+	margin: auto
+	color: #fff
+	font-size: 30px
+
+.reviews__list-media
+	width: 259px
+	min-width: 259px
+	height: 259px
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+
+.reviews__list-media-img
+	position: relative
+	border-radius: 50%
+	font-size: 0
+
+.reviews__list-media-img:after
+	content: ""
+	position: absolute
+	z-index: 2
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: #fff
+
+.reviews__list-text
+	padding-left: 30px
+	font-weight: 300
+
+// callback-section
+.callback-section
+	margin: 180px 0
+	position: relative
+	z-index: 1
