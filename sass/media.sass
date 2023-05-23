@@ -71,8 +71,6 @@
 	.slick-arrow.slick-prev, .slick-arrow.slick-next
 		border-radius: 0
 
-	
-
 	.reviews
 		margin: 0 0 70px
 		&__heading
@@ -100,8 +98,8 @@
 		font-size: 50px
 
 	.home
-		padding: 175px 0 0
-		margin: 0 auto 58px
+		padding: 175px 0 58px
+		margin: 0 auto
 
 	.logo
 		max-width: 213px
@@ -484,10 +482,12 @@
 	.gallery-box
 		width: 100%
 		margin: 0 0 35px
+		&:last-child
+			margin: 0
 
 	.gallery-wrapper
 		max-width: 348px
-		margin: 0 auto	
+		margin: 0 auto
 
 @media only screen and (max-width: 450px)
 	h1
@@ -550,7 +550,8 @@
 			margin: 0 0 15px
 
 	.in-programm
-		height: calc(100% + 250px + 250px)
+		&::before
+			height: calc(100% + 250px + 250px)
 		h2
 			display: none
 		.title-mobile
@@ -624,36 +625,34 @@
 			bottom: 7px
 		&:last-child
 			.prices-card__image
-				bottom: -55px	
+				bottom: -55px
 
 	.bonus-box
 		font-size: 17.5px
-		padding: 25px 70px 25px 25px
+		padding: 25px 30px 25px 25px
 		h4
 			font-size: 27.5px
-		.box-text	
+		.box-text
 			font-size: 13.5px
-			max-width: 200px	
-							
+			max-width: 200px
 
 	.price
 		font-size: 20px
 
 	.location
 		margin: 66px 0 0
-		h2	
+		h2
 			br
 				display: block
 
 	.address
 		max-width: 355px
-		
+
 	.location-image
-		margin: 0 auto 50px	
+		margin: 0 auto 50px
 
 	.gallery-wrapper
 		max-width: 312px
-
 
 @media only screen and (max-width: 420px)
 	.modal__wrapper h2
@@ -680,7 +679,42 @@
 	.link-message
 		font-size: 16px
 
+@media only screen and (max-width: 400px)
+	h1
+		font-size: 54px
+		margin: 0 auto 240px
+
+	.bonus-box
+		padding: 20px
+		width: 225px
+		font-size: 12.5px
+		letter-spacing: -0.13px
+		&::before
+			width: 253px
+		h4
+			font-size: 20.5px
+		.box-text
+			font-size: 10px
+			max-width: 160px
+
+	.prices-card
+		h3
+			font-size: 44px
+		&__image
+			width: 220px
+			right: -106px
+			bottom: 11px
+		&:last-child
+			.prices-card__image
+				width: 144px
+				bottom: -30px
+				right: -83px
+
 @media only screen and (max-width: 370px)
+	body
+		font-size: 12.5px
+		line-height: 1.32
+
 	.modal__wrapper h2
 		font-size: 23px
 
@@ -695,3 +729,135 @@
 		font-size: 11px
 		img
 			width: 20px
+
+	.btn
+		padding: 0 19px
+		height: 32px
+		font-size: 9px
+
+	.logo
+		max-width: 142px
+
+	.home
+		padding: 124px 0 38px
+		.btn
+			margin: 47px auto 55px
+
+	.home-content
+		font-size: 18.5px
+		max-width: 230px
+		margin: 0 auto 39px
+
+	.name-author
+		font-size: 36.5px
+
+	.date
+		font-size: 12.5px
+		span
+			max-width: 130px
+		img
+			width: 47px
+			margin: 0 18px 0 0
+
+	.quote
+		max-width: 285px
+		h3
+			font-size: 16.5px
+		h4
+			font-size: 16.5px
+			letter-spacing: -0.17px
+
+	h2
+		font-size: 25px
+		margin: 0 auto 40px
+		letter-spacing: 0.63px
+
+	.in-programm
+		&::before
+			height: calc(100% + 188px + 188px)
+		.box-text
+			max-width: 235px
+			margin: 20px auto 0
+
+	.in-programm-card
+		margin: 0 0 18px
+		width: 162px
+		padding: 165px 30px 30px
+
+	.leading-content
+		max-width: 225px
+		h3
+			font-size: 36.5px
+			margin: 0 auto 15px
+
+	.list-decor li
+		margin: 0 0 20px
+		padding: 40px 0 0
+		&::before
+			width: 65px
+			height: 65px
+			top: -10px
+
+	.advantages
+		h2
+			max-width: 220px
+
+	.advantages-card
+		width: 195px
+		margin: 0 auto 20px
+		&__icon
+			height: 100px
+
+	.practices
+		margin: 0 0 45px
+		.box-text
+			max-width: 280px
+
+	.tools-box
+		width: 100px
+		margin: 0 0 20px
+
+		&__icon
+			width: 85px
+			height: 85px
+			padding: 20px
+			margin: 0 auto 20px
+
+	.prices-card
+		margin: 0 0 22px
+		padding: 44px 25px 47px
+		h3
+			font-size: 37.5px
+			&::before
+				width: 274px
+				height: 144px
+				bottom: -18px
+		&__body
+			margin: 30px 0 0
+		&__text
+			margin: 0 0 30px
+
+	.price
+		font-size: 15px
+
+	.location
+		margin: 50px 0 0
+
+	.address
+		max-width: 270px
+
+	.location-image
+		margin: 0 auto 36px
+
+	.gallery-wrapper
+		max-width: 232px
+
+	.gallery-box
+		margin: 0 0 22px	
+
+	.reviews__list-container .slick-dots li
+		width: 16px
+		height: 16px
+		margin: 0 10px 0 0
+		&:last-child
+			margin: 0	
