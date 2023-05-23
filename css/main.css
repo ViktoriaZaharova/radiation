@@ -20,6 +20,8 @@
   max-width: 550px;
   text-transform: uppercase;
   font-weight: 300;
+  position: relative;
+  z-index: 3;
 }
 .home-content p {
   font-weight: 800;
@@ -29,6 +31,7 @@
   font-size: 88px;
   font-family: "MiracleWorldPersonalUse", sans-serif;
   margin: 40px 0;
+  line-height: 1;
 }
 
 .quote {
@@ -102,6 +105,7 @@
 }
 
 .in-programm-card {
+  text-align: center;
   position: relative;
   width: 388px;
   height: 530px;
@@ -146,6 +150,7 @@
   margin: 0 0 0 auto;
 }
 .leading-content h3 {
+  line-height: 1;
   text-transform: uppercase;
   font-family: "MiracleWorldPersonalUse", sans-serif;
   margin: 0 0 64px;
@@ -169,6 +174,13 @@
   height: 127px;
   background: url("../img/decor1.png") no-repeat center;
   background-size: 100%;
+}
+
+.advantages {
+  margin: 70px 0 0;
+}
+.advantages h2 {
+  max-width: 740px;
 }
 
 .advantages-card {
@@ -239,6 +251,8 @@
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  -webkit-box-shadow: 0 0 56px #b59562;
+          box-shadow: 0 0 56px #b59562;
 }
 .tools-box:last-child {
   margin: 0 0 50px;
@@ -315,12 +329,14 @@
 .prices-card__image {
   position: absolute;
   z-index: 1;
-  right: -70px;
-  bottom: -15px;
+  right: -165px;
+  bottom: -112px;
+  width: 514px;
 }
 .prices-card:last-child .prices-card__image {
-  right: -90px;
-  bottom: 0;
+  right: -180px;
+  bottom: -115px;
+  width: 361px;
 }
 .prices-card:last-child .bonus-box::before {
   background: url("../img/border-gradient.png") no-repeat center;
@@ -351,6 +367,7 @@
   height: 593px;
 }
 .bonus-box h4 {
+  line-height: 1;
   letter-spacing: -0.48px;
   font-size: 48px;
   font-weight: normal;
@@ -375,6 +392,9 @@
 
 .location {
   margin: 115px 0 0;
+}
+.location h2 br {
+  display: none;
 }
 
 .address {
@@ -509,20 +529,10 @@
   color: #fff;
   position: relative;
   z-index: 1;
+  background: rgba(220, 232, 255, 0.15);
 }
 .payment-error p {
   margin: 0 auto 25px;
-}
-.payment-error:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: rgba(17, 53, 158, 0.28);
-  mix-blend-mode: multiply;
 }
 .payment-error-wrapper {
   width: 100%;
@@ -567,3 +577,104 @@
   margin: 0 11px 0 0;
   width: 27px;
 }
+
+/*==========	section modal ==========*/
+.modal__div {
+  position: fixed;
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  overflow: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: none;
+  opacity: 0;
+}
+.modal__div h2 {
+  color: #13172d;
+}
+
+.modal__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.modal__close:before, .modal__close:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 100%;
+  height: 2px;
+  background: #13172d;
+  border-radius: 2px;
+}
+.modal__close:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.modal__close:after {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.modal__wrapper {
+  background: #fff;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  margin: 50px auto;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.modal__wrapper h2 {
+  margin: 0 auto 30px;
+  font-size: 40px;
+}
+.modal__wrapper h2 .box-text {
+  font-size: 24px;
+}
+
+.overlay {
+  z-index: 100;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+
+/*==========	section modal end	==========*/
