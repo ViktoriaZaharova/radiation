@@ -603,6 +603,7 @@
   flex-direction: column;
   display: none;
   opacity: 0;
+  color: #000;
 }
 .modal__div h2 {
   color: #13172d;
