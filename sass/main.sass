@@ -547,3 +547,33 @@
 	cursor: pointer
 	display: none
 
+
+footer
+	margin: 70px 0 40px
+	text-align: center
+	p
+		width: 100%
+
+.list-documents
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+	width: 100%
+	text-align: center
+	li
+		display: flex
+		align-items: center
+		margin: 0 0 10px
+		&::after
+			content: '|'
+			display: inline-block
+			margin: 0 10px
+		&:last-child
+			&::after
+				display: none	
+		a
+			width: 100%
+			color: #fff
+			&:hover
+				color: #ccc		

@@ -209,16 +209,18 @@
 		h4
 			font-size: 40px
 
+	.list-documents li
+		width: 100%
+		text-align: center
+		&::after
+			display: none
+
 @media only screen and (max-width: 640px)
 	.link-message
 		width: 100%
 		-webkit-box-pack: center
 		-ms-flex-pack: center
 		justify-content: center
-
-	.slick-dots li
-		width: 20px
-		height: 20px
 
 	.logo
 		max-width: 213px
@@ -672,10 +674,6 @@
 	.reviews__list-text
 		font-size: 18px
 
-	.reviews__list-container .slick-dots li
-		width: 20px
-		height: 20px
-
 	.link-message
 		font-size: 16px
 
@@ -853,11 +851,4 @@
 		max-width: 232px
 
 	.gallery-box
-		margin: 0 0 22px	
-
-	.reviews__list-container .slick-dots li
-		width: 16px
-		height: 16px
-		margin: 0 10px 0 0
-		&:last-child
-			margin: 0	
+		margin: 0 0 22px
